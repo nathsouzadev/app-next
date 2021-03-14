@@ -5,8 +5,8 @@ const Time = (props) => {
     
     return(
         <>
-            {dynamicDateString}
-            {props.staticDateString}
+            <p>{dynamicDateString}</p>
+            <p>{props.staticDateString}</p>
         </>
     )
 }
@@ -18,7 +18,8 @@ export function getStaticProps() {
     return {
         props: {
             staticDateString
-        }
+        },
+        revalidate: 1
     }
 }
 
