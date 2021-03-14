@@ -1,8 +1,12 @@
+import Link from 'next/link';
+
 const About = () => {
     return(
         <>
             <h1>About</h1>
-            <a href="/">Home</a>
+            <Link href="/">
+                <a>Home</a>
+            </Link>
         </>
     )
 }
